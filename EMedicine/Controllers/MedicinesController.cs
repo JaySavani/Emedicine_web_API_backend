@@ -6,11 +6,13 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using EMedicine.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace EMedicine.Controllers
 {
     [Route("api/[controller]")]
-    [ApiController]
+/*    [Authorize]
+*/    [ApiController]
     public class MedicinesController : ControllerBase
     {
         private readonly EMedicineContext _context;
